@@ -1,4 +1,4 @@
-package com.ylf.jucaipen.newtest;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.ylf.jucaipen.newtest.R;
 
 /**
  * Created by Administrator on 2015/11/4.

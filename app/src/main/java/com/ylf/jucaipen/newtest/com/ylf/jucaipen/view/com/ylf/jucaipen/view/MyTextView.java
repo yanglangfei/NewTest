@@ -1,4 +1,4 @@
-package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 /**
  * Created by Administrator on 2015/11/4.
@@ -28,16 +29,20 @@ public class MyTextView extends TextView {
     //网络的Getting
     private  NetGetting netGetting;
     //图片文件路径
-    private  String picName="LOGO";
+    private  String pic="pics";
 
     public void setTextStr(String text) {
         this.text = text;
+        initView();
     }
 
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initView();
     }
+
+   public  MyTextView(Context context) {
+    super(context);
+   }
 
 
     public MyTextView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -58,9 +63,9 @@ public class MyTextView extends TextView {
             //source  src标签属性
             Drawable drawable = null;
             // 封装路径
-            File file = new File(Environment.getExternalStorageDirectory(), picName);
             // 判断是否以http开头
             if(source.startsWith("http")){
+                File file = new File(Environment.getExternalStorageDirectory(), pic);
                 if(file.exists()){
                     //图片存在
                     drawable= Drawable.createFromPath(file.getAbsolutePath());
@@ -88,7 +93,7 @@ public class MyTextView extends TextView {
                     //下载图片
                     String path = params[0];
 
-                    File file = new File(Environment.getExternalStorageDirectory(), picName);
+                    File file = new File(Environment.getExternalStorageDirectory(), pic);
 
                     InputStream in = null;
 

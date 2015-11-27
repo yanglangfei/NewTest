@@ -1,10 +1,10 @@
-package com.ylf.jucaipen.newtest;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.TextView;
 
-import com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.MyTextView;
+import com.ylf.jucaipen.newtest.R;
+import com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.view.MyTextView;
 
 /**
  * Created by Administrator on 2015/11/4.

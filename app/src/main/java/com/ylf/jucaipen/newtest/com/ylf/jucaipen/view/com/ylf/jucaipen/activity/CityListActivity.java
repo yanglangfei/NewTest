@@ -1,4 +1,4 @@
-package com.ylf.jucaipen.newtest;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
+import com.ylf.jucaipen.newtest.R;
 import com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.adapter.SuperTreeViewAdapter;
 import com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.adapter.ThreeViewAdapter;
 

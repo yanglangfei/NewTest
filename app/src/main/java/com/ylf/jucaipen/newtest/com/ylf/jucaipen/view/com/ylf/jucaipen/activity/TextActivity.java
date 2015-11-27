@@ -1,4 +1,4 @@
-package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.activity;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;

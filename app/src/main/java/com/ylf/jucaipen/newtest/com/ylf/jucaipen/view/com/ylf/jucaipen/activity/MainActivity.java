@@ -1,4 +1,4 @@
-package com.ylf.jucaipen.newtest;
+package com.ylf.jucaipen.newtest.com.ylf.jucaipen.view.com.ylf.jucaipen.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,14 +6,9 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.MifareClassic;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.ylf.jucaipen.newtest.R;
 
 import java.io.IOException;
 
@@ -28,8 +23,8 @@ public class MainActivity extends Activity {
         initView();
 
     }
-
     private void initView() {
+
         info= (TextView) findViewById(R.id.info);
         nfcAdapter=NfcAdapter.getDefaultAdapter(this);
         if(nfcAdapter==null){
@@ -131,6 +126,5 @@ public class MainActivity extends Activity {
         }
         return null;
     }
-
 
 }
