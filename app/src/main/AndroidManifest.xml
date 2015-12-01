@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".com.ylf.jucaipen.view.com.ylf.jucaipen.activity.MyList"
+            android:name=".com.ylf.jucaipen.view.com.ylf.jucaipen.activity.TextActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".com.ylf.jucaipen.view.com.ylf.jucaipen.activity.NewActivity"></activity>
+        <activity android:name=".com.ylf.jucaipen.view.com.ylf.jucaipen.activity.NewActivity"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity android:name=".com.ylf.jucaipen.view.com.ylf.jucaipen.activity.ImageActivity"></activity>
     </application>
 
 </manifest>
